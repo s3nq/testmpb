@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Тест по ебучим лекциям</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Тест по лекциям</h1>
+		</header>
+		<main>
+			<div id="test-container">
+				<div id="controls">
+					<label>
+						<input type="radio" name="test-mode" value="all" checked /> Весь
+						тест
+					</label>
+					<label>
+						<input type="radio" name="test-mode" value="20" /> По 20 вопросов
+					</label>
+					<button id="shuffle-btn">Перемешать вопросы</button>
+					<button id="show-results-btn">Показать результаты</button>
+				</div>
+				<div id="question-container"></div>
+				<div id="navigation">
+					<button id="prev-btn" disabled>Предыдущий</button>
+					<button id="next-btn">Следующий</button>
+				</div>
+			</div>
+			<div id="results-container" style="display: none">
+				<h2>Результаты теста</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Вопрос</th>
+							<th>Ваш ответ</th>
+							<th>Правильный ответ</th>
+							<th>Правильность</th>
+						</tr>
+					</thead>
+					<tbody id="results-table"></tbody>
+				</table>
+			</div>
+		</main>
+		<footer>
+			<p>&copy; амаль ебёт в жопу за 50 рублей</p>
+		</footer>
+		<script src="script.js"></script>
+	</body>
+</html>
